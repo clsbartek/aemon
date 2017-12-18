@@ -1,0 +1,944 @@
+/* RESET
+----------------------------------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	list-style: none;
+	text-decoration:none;
+}
+
+/* DEFAULT
+-----------------------------------------------url(../images/bg.jpg) no-repeat center 0-----------------------------*/
+body { margin: 0 auto; background: #000000 ; font-family: Arial, sans-serif; font-size: 11px; }
+.wrap { margin: 0 auto; width: 992px; background: #fff; position:relative; }
+
+/* HEADER
+---------------------------------------------------------------------------*/
+#header { width: 992px; }
+	.first { float: left; padding: 10px 0 0 10px; width: 60px; }
+	#navTop { width: 992px; height: 37px; position: relative; z-index: 4; }
+		#navTop ul { float: left; width: 688px; padding: 12px 0 0 0; }
+		#navTop ul li { position: relative; float: left; padding: 0 6px 0 6px; height: 25px; background: url(../images/nav-top-li.gif) no-repeat 0 2px; }
+		#navTop ul li:first-child { background: none; }
+		#navTop ul li a { color:#000; }
+		#navTop ul li a:hover { text-decoration: underline; }
+		#navTop ul li.more a { padding: 0 14px 0 0; background: url(../images/nav-top-a.gif) no-repeat right 6px; }
+		#navTop ul li.more a:hover { text-decoration: none; }
+		#navTop ul li ul { display: none; position: absolute; left: 0; top: 10px; float: left; width: 122px; padding: 15px 0 5px 0; background: #fff; line-height: 18px; overflow: hidden; }
+		#navTop ul li ul li { display: block; width: 106px; padding: 0 0 0 8px; height: auto !important; background: none; }
+		#navTop ul li ul li a { background: none !important; }
+		#navTop ul li ul li a.special { display: block; padding: 6px 0; margin: 3px 0; border-top: 1px solid #ececec; border-bottom: 1px solid #ececec; }
+		#navTop ul li ul li a:hover { text-decoration: underline !important; }
+		#navTopUnser { float: right; width: 220px; padding: 12px 2px 0 0; }
+			#navTopUnser p { float: right; padding: 0 10px 0 0; font-size: 11px; color:#000; }
+			#navTopUnser a.kreska { float: right; height: 12px; padding: 0 9px 0 10px; background: url(../images/nav-top-li.gif) no-repeat 0 2px; font-size: 11px; color:#000; }
+			#navTopUnser a { float: right; height: 12px; font-size: 11px; color:#000; }
+			#navTopUnser a:hover { text-decoration: underline; }
+			#navTopUnser a img { display: block; }
+	#headerAdv { text-align: center; margin:0 auto; width: 992px; position: relative; z-index: 3; clear:both; }
+		#headerAdv img { display: inline-block; } 
+	#headerInfo { width: 992px; height: 93px; background: url(../images/header-info.gif) repeat-x 0 bottom; position:relative; }
+		#headerInfo div.logo { float: left; padding: 26px 0 0 17px; height: 55px; }
+		#headerInfo div.logo a { float: left; height: 55px; text-indent: -999em; }
+		#fb-social { float: left; margin-top: 42px; margin-left: 15px; }
+		#search { float: right; width: 307px; padding: 42px 0 0 0; }
+			#searchText { float: left; }
+			#searchText input { float: left; width: 253px; height: 24px; height: 19px\9; padding: 0 10px; padding-top: 5px\9; background: url(../images/search-text.gif) no-repeat 0 0; font-size: 12px; font-family: Arial, sans-serif; }
+			#searchSubmit { float: left; padding: 0 0 0 9px; }
+			#searchSubmit input { float: left; width: 13px; height: 23px; background: url(../images/search-submit.gif) no-repeat 0 0; cursor: pointer; }
+			
+/* NAV
+---------------------------------------------------------------------------*/
+/*	#headerNav { position: relative; width: 992px; height: 48px; background: url(../images/header-nav.gif) repeat-x 0 0; text-align: left;}
+		#headerNav > li { display: inline; }
+		#headerNav > li:first-child > a { background: none; }
+		#headerNav > li > a { display: inline-block; margin: 1px -4px 0 0; padding: 10px 16px 0 16px; height: 25px; background: url(../images/header-nav-li.gif) no-repeat 0 10px; font-weight: bold; color:#fff; font-size: 13px;}
+		ul#headerNav > li:hover > a, ul#headerNav > li > a:hover {-webkit-border-top-left-radius: 3px;-webkit-border-top-right-radius: 3px;-moz-border-radius-topleft: 3px;-moz-border-radius-topright: 3px;border-top-left-radius: 3px;border-top-right-radius: 3px; color:#b80808; background:#fefefe; z-index: 10; position: relative;}
+		ul#headerNav > li:last-child:hover > a, ul#headerNav > li:last-child > a:hover {-webkit-border-radius: 3px;border-radius: 3px;-moz-border-radius: 3px;}
+			#headerNav .sub {position: absolute; left: 0; top: 36px; background: #fff url(../images/sub-bg.jpg) repeat-x bottom left; width: 992px!important; -moz-box-shadow: 0px 10px 15px #444; -webkit-box-shadow: 0px 10px 15px #444; box-shadow: 0px 10px 15px #444; line-height: 1.5; height: 350px; overflow: hidden;}
+			#headerNav .sub div{float: left;}
+				#headerNav .sub h2{color:#505050; font-size: 14px; margin-bottom: 10px; margin-top: 20px;}
+				#headerNav .sub a{color:#000; font-size: 12px;}
+				#headerNav .sub a:hover{text-decoration:underline; color:#cc0000;}
+					#headerNav .sub .sub-nav {background: #fff url(../images/sub-nav-bg.jpg) no-repeat bottom right; width: 150px; padding: 0px 8px; font-weight:bold; height:100%; border-right: 1px solid #e4e4e4;}
+					#headerNav .sub-nav h2{margin-left: 4px; margin-top: 20px;}
+					#headerNav .sub-nav a{padding: 2px 4px; display:block;}
+					#headerNav .sub-nav a:hover{background-color:#cc0000; color:white; text-decoration:none;}
+				#headerNav .sub .col, #headerNav .sub .col + .sub-nav{margin-left: 55px;}
+				#headerNav .sub .col ul + h2{margin-top: 20px;}
+				#headerNav .sub .col ul.float{float: left;}
+				#headerNav .sub .col ul + ul{margin-left: 40px;}
+			#headerNav .sub.three .col{margin-left: 90px;}
+			#headerNav .sub.four .col{margin-left: 75px;}
+			#headerNav .sub.four .col{margin-left: 65px;}
+			#headerNav .sub.five .col{margin-left: 45px;}
+			#headerNav .sub.five .col ul + ul{margin-left: 30px;}
+		#headerNav .league{background: #fff url(../images/sub-nav-bg.jpg) no-repeat bottom right; padding: 0px 10px; font-weight:bold; height:100%; border-right: 1px solid #e4e4e4; min-width: 110px;}
+		#headerNav .league h2{margin-left: 4px; margin-top: 20px;}
+		#headerNav .league a{padding: 2px 4px; display:block;}
+		#headerNav .league a:hover{background-color:#cc0000; color:white; text-decoration:none;}
+		#headerNav .league.even {background:none; font-weight:normal; border: none;}
+		#headerNav .league + .league{margin-left: 11px;}
+			#headerNav .sub .banners{float: right; width: 151px; margin-right: 10px;}
+			#headerNav .banners a.link{margin: 10px 0; padding: 0 0 5px; display: block; border-bottom: 1px solid #ededed;} */
+#headerNav { position: relative; width: 992px; height: 36px; background: url(../images/header-nav.gif) repeat-x 0 0; text-align: center; z-index: 2; }
+#headerNav * { text-align: left; }
+#headerNav > li { display: inline; font-size: 12px!important; }
+#headerNav > li:first-child > a { background: none; }
+#headerNav > li > a { display: inline-block; margin: 1px -4px 0 0; padding: 10px 15px 0 15px; height: 25px; background: url(../images/header-nav-li.gif) no-repeat 0 10px; font-weight: bold; color:#fff; font-size: 13px;}
+ul#headerNav > li:hover > a, ul#headerNav > li > a:hover {-webkit-border-top-left-radius: 3px;-webkit-border-top-right-radius: 3px;-moz-border-radius-topleft: 3px;-moz-border-radius-topright: 3px;border-top-left-radius: 3px;border-top-right-radius: 3px; color:#b80808; background:#fefefe; z-index: 10; position: relative;}
+ul#headerNav > li:last-child:hover > a, ul#headerNav > li:last-child > a:hover { }
+
+#headerNav .sub {position: absolute; left: 0; top: 36px; background: #fff url(../images/sub-bg.jpg) repeat-x bottom left; width: 992px!important; -moz-box-shadow: 0px 10px 15px #444; -webkit-box-shadow: 0px 10px 15px #444; box-shadow: 0px 10px 15px #444; line-height: 1.5; height: 310px; overflow: hidden; opacity:0; filter:alpha(opacity=0) }
+#headerNav .sub div{float: left;}
+
+#headerNav .sub div.h2{color:#505050; font-size: 14px; margin-bottom: 10px; margin-top: 20px; display:block; font-weight:bold; float:none; }
+#headerNav .sub a{color:#000; font-size: 12px;}
+#headerNav .sub a:hover{text-decoration:underline; color:#cc0000;}
+
+#headerNav .sub .sub-nav {background: #fff url(../images/sub-nav-bg.jpg) no-repeat bottom right; width: 150px; padding: 0px 8px; font-weight:bold; height:100%; border-right: 1px solid #e4e4e4; }
+#headerNav .sub-nav div.h2{margin-left: 4px; margin-top: 20px;}
+#headerNav .sub-nav a{padding: 2px 4px; display:block;}
+#headerNav .sub-nav a:hover{background-color:#cc0000; color:white; text-decoration:none;}
+
+#headerNav .sub .col, #headerNav .sub .col + .sub-nav{margin-left: 55px;}
+#headerNav .sub .col ul + div.h2{margin-top: 20px;}
+#headerNav .sub .col ul.float{float: left;}
+#headerNav .sub .col ul + ul{margin-left: 40px;}
+
+#headerNav .sub.three .col{margin-left: 90px;}
+#headerNav .sub.four .col{margin-left: 75px;}
+#headerNav .sub.four .col{margin-left: 65px;}
+#headerNav .sub.five .col{margin-left: 45px;}
+#headerNav .sub.five .col ul + ul{margin-left: 30px;}
+
+#headerNav .league{background: #fff url(../images/sub-nav-bg.jpg) no-repeat bottom right; padding: 0px 10px; font-weight:bold; height:100%; border-right: 1px solid #e4e4e4; min-width: 110px;}
+#headerNav .league div.h2{margin-left: 4px; margin-top: 20px;}
+#headerNav .league a{padding: 2px 2px; display:block;}
+#headerNav .league a:hover{background-color:#cc0000; color:white; text-decoration:none;}
+#headerNav .league.even {background:none; font-weight:normal; border: none;}
+#headerNav .league.even a { padding: 0px 2px; }
+#headerNav .league.even a:hover { text-decoration:underline; color:#cc0000; background-color: transparent; }
+#headerNav .league + .league{margin-left: 11px;}
+
+#headerNav .sub .banners{float: right; width: 151px; margin-right: 10px;}
+#headerNav .banners a.link{margin: 10px 0; padding: 0 0 5px; display: block; border-bottom: 1px solid #ededed;}
+			
+
+/* HEADER NAV & CLUBS BLUE 
+---------------------------------------------------------------------------*/
+#headerNavMundial { position: relative; width: 992px; height: 36px; background: url(../images/headerNavBlue.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerNavMundial > li { display: inline; }
+	#headerNavMundial > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 16px 0 16px; height: 36px; font-weight: bold; color:#fff; font-size: 13px;}
+	#headerNavMundial > li > a:hover { background: url(../images/headerNavBlue-active.gif) repeat-x 0 0; }
+	#headerNavMundial > li > a.active { background: url(../images/headerNavBlue-active.gif) repeat-x 0 0; }
+
+#headerNavPrimeraDivision { position: relative; width: 992px; height: 36px; background: url(../images/headerNavRed.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerNavPrimeraDivision > li { display: inline; }
+	#headerNavPrimeraDivision > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 12px 0 12px; height: 36px; font-weight: bold; color:#fff; font-size: 13px;}
+	#headerNavPrimeraDivision > li > a:hover { background: url(../images/headerNavOrange-active.gif) repeat-x 0 0; }
+	#headerNavPrimeraDivision > li > a.active { background: url(../images/headerNavOrange-active.gif) repeat-x 0 0; }
+	
+#headerNavGreen { position: relative; width: 992px; height: 36px; background: url(../images/headerNavGreen.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerNavGreen > li { display: inline; }
+	#headerNavGreen > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 16px 0 16px; height: 36px; font-weight: bold; color:#fff; font-size: 13px;}
+	#headerNavGreen > li > a:hover { background: url(../images/headerNavGreen-active.gif) repeat-x 0 0; }
+	#headerNavGreen > li > a.active { background: url(../images/headerNavGreen-active.gif) repeat-x 0 0; }
+
+#headerNavBlack { position: relative; width: 992px; height: 36px; background: url(../images/headerNavBlack.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerNavBlack > li { display: inline; }
+	#headerNavBlack > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 16px 0 16px; height: 36px; font-weight: bold; color:#fff; font-size: 13px;}
+	#headerNavBlack > li > a:hover { background: url(../images/headerNavRed-active.gif) repeat-x 0 0; }
+	#headerNavBlack > li > a.active { background: url(../images/headerNavRed-active.gif) repeat-x 0 0; color: #ffc917; }	
+
+/* Tylko dla francji zmiajszona szerokosc */
+#headerNavNavy { position: relative; width: 992px; height: 36px; background: url(../images/headerNavNavy.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerNavNavy > li { display: inline; }
+	#headerNavNavy > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 13px 0 13px; height: 36px; font-weight: bold; color:#fff; font-size: 13px;}
+	#headerNavNavy > li > a:hover { background: url(../images/headerNavNavy-active.gif) repeat-x 0 0; }
+	#headerNavNavy > li > a.active { background: url(../images/headerNavNavy-active.gif) repeat-x 0 0; }
+	
+#headerNavDef { position: relative; width: 992px; height: 36px; background: url(../images/headerNavBlue.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerNavDef > li { display: inline; }
+	#headerNavDef > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 16px 0 16px; height: 36px; font-weight: bold; color:#fff; font-size: 13px;}
+	#headerNavDef > li > a:hover { background: url(../images/headerNavBlue-active.gif) repeat-x 0 0; }
+	#headerNavDef > li > a.active { background: url(../images/headerNavBlue-active.gif) repeat-x 0 0; }
+	
+#headerSubNavRed { position: relative; width: 992px; height: 32px; background: url(http://static.goal.pl/images/headerSubNavRed.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerSubNavRed > li { display: inline; }
+	#headerSubNavRed > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 12px 0 12px; height: 32px; font-weight: bold; color:#ffc917; font-size: 12px;}
+	#headerSubNavRed > li > a:hover { color: #fff2e4; }
+	
+#headerSubNavBlue { position: relative; width: 992px; height: 32px; background: url(http://static.goal.pl/images/headerSubNavBlue.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerSubNavBlue > li { display: inline; }
+	#headerSubNavBlue > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 12px 0 12px; height: 32px; font-weight: bold; color:#fff; font-size: 12px;}
+	#headerSubNavBlue > li > a:hover { color: #fff2e4; }
+	
+#headerNavAnglia { position: relative; width: 992px; height: 36px; background: url(http://static.goal.pl/images/headerNavAnglia.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerNavAnglia > li { display: inline; }
+	#headerNavAnglia > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 7px 10px 0 7px; height: 36px; font-weight: bold; color:#fff; font-size: 13px;}
+	#headerNavAnglia > li > a:hover { background: url(http://static.goal.pl/images/headerNavAnglia-active.gif) repeat-x 0 0; }
+	#headerNavAnglia > li > a.active { background: url(http://static.goal.pl/images/headerNavAnglia-active.gif) repeat-x 0 0; }
+	
+#headerNavKadra { position: relative; width: 992px; height: 36px; background: url(http://static.goal.pl/images/headerNavKadra.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerNavKadra > li { display: inline; }
+	#headerNavKadra > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 12px 0 12px; height: 36px; font-weight: bold; color:#fff; font-size: 13px;}
+	#headerNavKadra > li > a:hover { background: url(http://static.goal.pl/images/headerNavKadra-active.gif) repeat-x 0 0; }
+	#headerNavKadra > li > a.active { background: url(http://static.goal.pl/images/headerNavKadra-active.gif) repeat-x 0 0; }
+
+#headerNavEuro { position: relative; width: 992px; height: 36px; background: url(http://static.goal.pl/images/headerNavAnglia.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerNavEuro > li { display: inline; }
+	#headerNavEuro > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 12px 0 12px; height: 36px; font-weight: bold; color:#fff; font-size: 13px;}
+	#headerNavEuro > li > a:hover { background: url(http://static.goal.pl/images/headerNavAnglia-active.gif) repeat-x 0 0; }
+	#headerNavEuro > li > a.active { background: url(http://static.goal.pl/images/headerNavAnglia-active.gif) repeat-x 0 0; }
+
+#headerSubNavGreen { position: relative; width: 992px; height: 32px; background: url(http://static.goal.pl/images/headerSubNavGreen.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerSubNavGreen > li { display: inline; }
+	#headerSubNavGreen > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 12px 0 12px; height: 32px; font-weight: bold; color:#fff; font-size: 12px;}
+	#headerSubNavGreen > li > a:hover { color: #fff2e4; }
+	
+#headerSubNavOrange { position: relative; width: 992px; height: 32px; background: url(http://static.goal.pl/images/headerSubNavOrange.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerSubNavOrange > li { display: inline; }
+	#headerSubNavOrange > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 12px 0 12px; height: 32px; font-weight: bold; color:#fff; font-size: 12px;}
+	#headerSubNavOrange > li > a:hover { color: #fff2e4; }
+
+#headerSubNavNavy { position: relative; width: 992px; height: 32px; background: url(http://static.goal.pl/images/headerSubNavNavy.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerSubNavNavy > li { display: inline; }
+	#headerSubNavNavy > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 12px 0 12px; height: 32px; font-weight: bold; color:#fff; font-size: 12px;}
+	#headerSubNavNavy > li > a:hover { color: #e2ecf7; }
+
+#headerSubNavAnglia { position: relative; width: 992px; height: 32px; background: url(../images/headerSubNavAnglia.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerSubNavAnglia > li { display: inline; }
+	#headerSubNavAnglia > li > span.podmenu { display: inline-block; margin: 0 -4px 0 0; padding: 7px 1px 0 7px; height: 36px; font-weight: bold; color:#fff; font-size: 14px; }
+	#headerSubNavAnglia > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 12px 0 12px; height: 32px; font-weight: bold; color:#fff; font-size: 12px;}
+	#headerSubNavAnglia > li > a:hover { color: #ffe0e7; }
+
+#headerSubNavKadra { position: relative; width: 992px; height: 32px; background: url(../images/headerSubNavAnglia.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerSubNavKadra > li { display: inline; }
+	#headerSubNavKadra > li > span.podmenu { display: inline-block; margin: 0 -4px 0 0; padding: 7px 1px 0 7px; height: 36px; font-weight: bold; color:#fff; font-size: 14px; }
+	#headerSubNavKadra > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 12px 0 12px; height: 32px; font-weight: bold; color:#fff; font-size: 12px;}
+	#headerSubNavKadra > li > a:hover { color: #ffe0e7; }
+	
+#headerSubNavEuro { position: relative; width: 992px; height: 32px; background: url(../images/headerSubNavAnglia.gif) repeat-x 0 0; text-align: left; color: #FFF; }
+	#headerSubNavEuro > li { display: inline; }
+	#headerSubNavEuro > li > span.podmenu { display: inline-block; margin: 0 -4px 0 0; padding: 7px 1px 0 7px; height: 36px; font-weight: bold; color:#fff; font-size: 14px; }
+	#headerSubNavEuro > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 10px 12px 0 12px; height: 32px; font-weight: bold; color:#fff; font-size: 12px;}
+	#headerSubNavEuro > li > a:hover { color: #ffe0e7; }
+	
+#headerClubsNav { position: relative; width: 992px; height: 33px; background: url(../images/headerClubNav.gif) repeat-x 0 0; text-align: left; color: #353535; margin-bottom: 10px; }
+	#headerClubsNav > li { display: inline; }
+	#headerClubsNav > li.firstClub { padding-left: 9px; }
+	#headerClubsNav > li > a.firstClub { background-image: none; }
+	#headerClubsNav > li > a { display: inline-block; margin: 0 -4px 0 0; padding: 11px 7px 0 7px; height: 33px; font-weight: normal; color:#353535; font-size: 11px; background: url(../images/headerClubNavSeparator.gif) no-repeat 0 12px; }
+	#headerClubsNav > li > a:hover { color: #636363; }
+
+
+
+/* FORTUNA
+---------------------------------------------------------------------------*/
+	#fortuna { width: 992px; height: 50px; margin-bottom: 10px; padding: 0; }
+	#promoBanner { width: 655px; padding-bottom: 10px; margin-left: 0px; }
+	#promoBannerPage { width: 655px; padding-top: 10px; margin-left: 10px; }
+		
+		
+/* CONTENT
+---------------------------------------------------------------------------*/
+#content { float: left; width: 680px; padding: 0 0 25px 0; }
+#content a { color: #cc000e; }
+#contentFull { padding: 0 0 25px 0; }
+#topContent { width: 992px; padding: 0; }
+#newsContent { float: left; width: 680px; padding: 0; }
+#login { float: left; width: 335px; padding: 0 0 55px 160px; font-size: 12px; }
+#register { float: left; width: 495px; padding: 0 0 55px 0;}
+
+	/* HOME
+	-----------------------------------------------------------------------*/
+	#homeNews { padding: 0 0 12px 10px; width: 670px; overflow: hidden; }
+	#homeClubNews { padding: 0 0 12px 10px; width: 982px; overflow: hidden; }
+		#homeNewsLeft { float: left; width: 438px; }
+			#homeNewsLeft img { display: block; }
+			#homeNewsText { background: #000; color:#fff; width: 391px; height:101px; overflow:hidden; padding: 14px 17px 17px 17px; }
+			#homeNewsText h2 { font-size: 29px; padding: 0 0 4px 0; }
+			#homeNewsText h2 a { color:#fff; }
+			#homeNewsText p { font-size: 12px; line-height: 16px; }
+			#homeNewsText p a { padding: 0 14px 0 0; color:#fff; font-weight: bold; background: url(../images/home-news-text-a.gif) no-repeat right 5px; }
+			#homeNewsText p a:hover { text-decoration: underline; }
+		#homeNewsRight { float: left; width: 216px; }
+			#homeNewsRight ul li { border-bottom: 1px solid #ededed; padding: 5px 0 5px 2px; }
+			#homeNewsRight ul li a { font-size: 12px; color:#000; }
+			#homeNewsRight ul li a span { font-size: 9px; font-family: Tahoma, sans-serif; color:#cc0000; font-weight: bold; }
+			#homeNewsRight ul li a:hover,
+			#homeNewsRight ul li a:hover strong { text-decoration: underline; }
+			#homeNewsRight a.more { float: left; padding: 10px 14px 0 0; font-weight: bold; color:#3c3c3c; background: url(../images/home-news-right-a.gif) no-repeat right 15px; }
+			#homeNewsRight a.more:hover { text-decoration: underline; }
+		#homeNewsRightWide { float: left; width: 532px; font-size: 12px; line-height: 17px; padding: 0; margin: 0; }
+			#homeNewsRightWide .firstNews { border-bottom: solid 1px #ededed; padding-bottom: 10px; height: 125px; overflow:hidden; }
+			#homeNewsRightWide .middleNews { padding-top: 10px; border-bottom: solid 1px #ededed; padding-bottom: 10px; height: 125px; overflow:hidden; }
+			#homeNewsRightWide .lastNews { padding-top: 10px; border-bottom: none; height: 125px; overflow:hidden; }
+			#homeNewsRightWide .newsImg { float: left; margin-right: 12px; }
+			#homeNewsRightWide h1 span { font-size: 16px; font-family: Tahoma, sans-serif; color:#000000; font-weight: bold; }
+			#homeNewsRightWide h1 { font-size: 23px; font-weight: bold; line-height: 28px; padding-bottom: 10px; padding-top: 4px; }
+			#homeNewsRightWide h1 a { color: #000; text-decoration: none; }
+			#homeNewsRightWide h1 a:hover { color: #3e3e3e; }
+			#homeNewsRightWide h1.red { color: #cc000e; }
+			#homeNewsRightWide h1.red a { color: #cd000e; }
+			#homeNewsRightWide h1.red a:hover { color: #9d0303; }
+			#homeNewsRightWide p a { color: #000; font-weight: bold; }
+			#homeNewsRightWide p a:hover { color: #303030; text-decoration: underline; }
+	#homeInfo { width: 655px; margin: 0 0 12px 10px; background: #ebebeb; overflow: hidden; }	
+		#homeInfo p { float: left; width: 163px; padding: 8px 0 8px 3px; font-weight: bold; color:#cc0000; background: url(../images/home-info.gif) no-repeat right 10px; }
+		#homeInfo span { float: left; width: 475px; padding: 8px 0 8px 10px; font-weight: bold; color:#3c3c3c; }
+	#homeAdv { padding: 0 0 0 10px; }
+	#homeBox { overflow: hidden; width: 680px; }
+		#homeBoxLeft { float: left; width: 388px; padding: 0 0 0 10px; }
+		#homeBoxRight { float: left; width: 256px; padding: 0 0 0 12px; }
+		.homeBox { border-bottom: 1px solid #ececec; float: left; padding: 12px 0 0 0; }
+		.homeBoxImg { float: left; width: 198px; }
+		.homeBoxDesc { float: left; width: 185px; }
+			.homeBoxDesc h3 { font-size: 14px; color:#cc0000; line-height: 19px; }
+			.homeBoxDesc h3 a { color:#cc0000; }
+			.homeBoxDesc h3 a:hover { color:#9d0303; }
+			.homeBoxDesc p { padding: 7px 0 0 0; font-size: 12px; line-height: 17px; color:#000; }
+			.homeBoxDesc p a { font-weight: bold; color:#3c3c3c; padding: 0 14px 0 0; background: url(../images/home-box-p-a.gif) no-repeat right 5px; }
+			.homeBoxDesc p a:hover { text-decoration: underline; }
+		.homeBox ul { width: 100%; float: left; padding: 7px 0 0 0; }
+			.homeBox ul li { float: left; padding: 0 10px 0 11px; background: url(../images/home-box-ul.gif) no-repeat 0 2px; color:#6d6d6d; }
+			.homeBox ul li span { color:#505050; }
+			.homeBox ul li a { color:#6d6d6d; padding: 0 0 0 16px; background: url(../images/home-box-ul-a.gif) no-repeat 0 2px; }
+			.homeBox ul li a:hover { color:#535353; }
+			.homeBox ul li:first-child { background: none; padding: 0 10px 0 0; }
+		.homeBox ol { width: 100%; padding: 2px 0 9px 0; float: left; }
+			.homeBox ol li { float: left; padding: 0 4px 0 7px; background: url(../images/home-box-ol.gif) no-repeat 0 7px; }
+			.homeBox ol li:first-child { background: none; padding: 0 4px 0 0; } 
+			.homeBox ol li a { color:#6d6d6d; }
+			.homeBox ol li a:hover { text-decoration: underline; }
+		#homeBoxBlue { overflow: hidden; width: 660px; margin-left: 10px; }
+			#homeBoxBlue .firstNews { border-bottom: solid 1px #ededed; padding-bottom: 10px; min-height: 125px; }
+			#homeBoxBlue .middleNews { padding-top: 10px; border-bottom: solid 1px #ededed; padding-bottom: 12px; min-height: 125px; }
+			#homeBoxBlue .lastNews { padding-top: 10px; border-bottom: none; }
+			#homeBoxBlue .newsImg { float: left; margin-right: 12px; }
+			#homeBoxBlue h1 { font-size: 23px; font-weight: bold; line-height: 28px; padding-bottom: 8px; padding-top: 4px; }
+			#homeBoxBlue h1 a { color: #000; text-decoration: none; }
+			#homeBoxBlue h1 a:hover { color: #3e3e3e; }
+			#homeBoxBlue h1.red { color: #cc000e; }
+			#homeBoxBlue h1.red a { color: #cd000e; }
+			#homeBoxBlue h1.red a:hover { color: #9d0303; }
+			#homeBoxBlue h1 span { font-size: 14px; font-weight: bold; color: #000000; padding-right: 8px; line-height: 20px; }
+			#homeBoxBlue p { font-size: 12px; line-height: 17px; color:#000; }
+			#homeBoxBlue p a { color: #000; font-weight: bold; }
+			#homeBoxBlue p a:hover { color: #303030; text-decoration: underline; }
+			#homeBoxBlue .addons { width:450px; overflow:hidden; height:20px; }
+			#homeBoxBlue .addons ul { width : 100%; padding: 7px 0 0 0; }
+				#homeBoxBlue .addons ul li { float: left; padding: 0 10px 0 11px; background: url(../images/home-box-ul.gif) no-repeat 0 2px; color:#6d6d6d; }
+				#homeBoxBlue .addons ul li span { color:#505050; }
+				#homeBoxBlue .addons ul li a { color:#6d6d6d; padding: 0 0 0 16px; background: url(../images/home-box-ul-a.gif) no-repeat 0 2px; }
+				#homeBoxBlue .addons ul li a:hover { color:#535353; }
+				#homeBoxBlue .addons ul li.first-tag { float: left; padding: 0 4px 0 7px; background: url(../images/home-box-ul.gif) no-repeat 0 2px; color:#6d6d6d; }
+				#homeBoxBlue .addons ul li.tag { float: left; padding: 0 4px 0 7px; background: url(../images/home-box-ol.gif) no-repeat 0 7px; }
+				#homeBoxBlue .addons ul li a.tag { background-image: none !important; padding: 0px !important; }
+				#homeBoxBlue .addons ul li:first-child { background: none; padding: 0 10px 0 0; }
+			#homeGalleryRed { width: 650px; height: 220px; margin-left: 10px; margin-top: 10px; margin-bottom: 0px; padding-top: 14px; padding-left: 10px; color: #ffffff; background-color: #cd000e; }
+				#homeGalleryRed h1 { font-size: 21px; font-weight: normal; margin-bottom: 13px; }
+				#homeGalleryRed .galleryBox { float: left; width: 120px; padding-right: 10px; }
+					#homeGalleryRed .galleryImg { width: 120px; margin-bottom: 10px; }
+					#homeGalleryRed p { padding: 0; margin: 0; }
+					#homeGalleryRed p a { font-size: 13px; line-height: 16px; color: #FFF; text-decoration: none; }
+					#homeGalleryRed p a:hover { text-decoration: none; }
+			#homeGalleryLightBlue { width: 650px; height: 220px; margin-left: 10px; margin-top: 10px; margin-bottom: 0px; padding-top: 14px; padding-left: 10px; color: #ffffff; background-color: #4c759f; }
+				#homeGalleryLightBlue h1 { font-size: 21px; font-weight: normal; margin-bottom: 13px; }
+				#homeGalleryLightBlue .galleryBox { float: left; width: 120px; padding-right: 10px; }
+					#homeGalleryLightBlue .galleryImg { width: 120px; margin-bottom: 10px; }
+					#homeGalleryLightBlue p { padding: 0; margin: 0; }
+					#homeGalleryLightBlue p a { font-size: 13px; line-height: 16px; color: #FFF; text-decoration: none; }
+					#homeGalleryLightBlue p a:hover { text-decoration: none; }
+			#homeGalleryDarkBlue { width: 650px; height: 220px; margin-left: 10px; margin-top: 10px; margin-bottom: 0px; padding-top: 14px; padding-left: 10px; color: #ffffff; background-color: #052547; }
+				#homeGalleryDarkBlue h1 { font-size: 21px; font-weight: normal; margin-bottom: 13px; }
+				#homeGalleryDarkBlue .galleryBox { float: left; width: 120px; padding-right: 10px; }
+					#homeGalleryDarkBlue .galleryImg { width: 120px; margin-bottom: 10px; }
+					#homeGalleryDarkBlue p { padding: 0; margin: 0; }
+					#homeGalleryDarkBlue p a { font-size: 13px; line-height: 16px; color: #FFF; text-decoration: none; }
+					#homeGalleryDarkBlue p a:hover { text-decoration: none; }
+		#homeSocialBox { clear: both; width: 660px; margin-left: 10px; text-align: right; border-bottom: solid 1px #ececec; padding-bottom: 14px; padding-top: 14px; margin-top: 0; }
+		
+		
+		/* NEWS LIST
+		-------------------------------------------------------------*/
+		
+		#newsList { width: 660px; margin-left: 10px; }
+			#newsListBox { width: 100%; border-bottom: solid 1px #ececec; padding-top: 10px; height: 30px; }
+				#newsListBox .time { float: left; width: 120px; display: block; font-size: 18px; color: #a7a7a7; font-weight: normal; }
+				#newsListBox .title { float: left; font-size: 17px; font-weight: normal; color: #000000; display: block; }
+					#newsListBox .title a { text-decoration: none; color: #000000; font-weight: normal; }
+					#newsListBox .title a:hover { text-decoration: underline; }
+					#newsListBox .title span { font-size: 14px; color: #cc000e; font-weight: bold; padding-right: 10px; }
+				#newsListBox .comments a { float: left; display: block; color:#6d6d6d; padding: 0 0 0 16px; background: url(../images/home-box-ul-a.gif) no-repeat 0 4px; margin-left: 10px; margin-top: 2px; }
+					#newsListBoxMore { width: 100%; border-bottom: none; padding-top: 14px; padding-bottom: 25px; }
+					#newsListBoxMore a { font-size: 14px; color: #000000; text-decoration: none; }
+						#newsListBoxMore a:hover { text-decoration: underline; }
+			#newsListSeparator { margin-top: 30px; }
+				
+			
+	/* PAGE
+	-------------------------------------------------------------*/
+	#pageClub { float: left; width: 231px; padding: 0 13px 20px 10px; margin: 0 2px 0 13px; background: #f8f8f8; }
+		#pageClub h2 { padding: 9px 0 20px 0; font-size: 28px; color:#000; }
+		#pageClub h3 { font-size: 21px; color:#4f4f4f; font-weight: normal; }
+		#clubLogo { width: 100%; text-align: center; padding: 0 0 20px 0; }
+		#clubInfo { padding: 0 0 25px 0; }
+			#clubInfo ul li { width: 100%; border-top: 1px solid #efefef; padding: 5px 0; font-size: 12px; }
+			#clubInfo ul li:first-child { border: none; }
+			#clubInfo ul li a { font-weight: bold; color:#cc0000; }
+			#clubInfo ul li a:hover { text-decoration: underline; }
+		#clubDesc { line-height: 17px; color:#000; padding: 0 0 20px 0; }
+			#clubDesc strong { display: block; padding: 12px 0 3px 0; font-size: 12px; }
+			#clubDesc p { padding: 0 0 1px 0; font-size: 11px; }
+		#clubStadium { padding: 12px 0 11px 0; overflow: hidden; font-size: 12px; }
+			#clubStadium ul { line-height: 19px; padding: 9px 0; float: left; width: 50px; }
+			#clubStadium ul li { float: left; width: 100%; padding: 5px 0; border-top: 1px solid #f1f1f1; }
+			#clubStadium ul li:first-child { border: none; }
+			#clubStadium ul li span { float: left; width: 10px; padding: 0 0 0 3px; }
+			#clubStadium ol { line-height: 19px; padding: 9px 0 9px 30px; float: left; width: 75px; }
+			#clubStadium ol li { float: left; width: 100%; padding: 5px 0; }
+			#clubStadium ol li strong { float: left; width: 155px; }
+		#clubStat { overflow: hidden; padding: 12px 0 10px 0; }
+			#clubStat h4 { float: left; padding: 6px 0 5px 2px; width: 255px; border-bottom: 1px solid #eaeaea; background:#f0f0f0; font-size: 11px; color:#5c5c5c; }
+			#clubStat ul { line-height: 19px; padding: 9px 0; float: left; width: 100%; font-size: 12px; }
+			#clubStat ul li { float: left; width: 100%; }
+			#clubStat ul li span { float: left; width: 110px; padding: 0 0 0 3px; }
+			#clubStat ul li strong { float: left; width: 100px; }
+		#clubTeam { font-size: 12px; overflow: hidden; padding: 15px 0 0 0; }
+			#clubTeam h4 { float: left; padding: 6px 0 5px 2px; width: 295px; border-bottom: 1px solid #eaeaea; background:#f0f0f0; font-size: 11px; color:#5c5c5c; }
+			#clubTeam ul { float: left; width: 100%; padding: 3px 0 6px 0; }
+			#clubTeam ul li { width: 100%; float: left; padding: 4px 0 5px 0; border-top: 1px solid #efefef; }
+			#clubTeam ul li:first-child { border: none; }
+			#clubTeam ul li a { float: left; width: 181px; color:#cc0000;font-weight: bold; }
+			#clubTeam ul li em { float: left; font-style: normal; width: 35px; padding: 0 0 0 3px; }
+			#clubTeam ul li span { float: left; width: 70px; }
+			#clubTeam ul li a:hover { text-decoration: underline; }
+		#clubPagination { width: 330px; padding: 19px 0 19px 2px; font-size: 12px; overflow: hidden; }
+			#clubPagination div.page { text-align:center; width:185px; float:left; }
+      #clubPagination span { padding: 0 4px 0 4px; color:#dfdfdf; }
+			#clubPagination a { font-size: 12px; color:#cc0000; }
+			#clubPagination a:hover { text-decoration: underline; }
+			#clubPagination a.active { color:#000; font-weight: bold; }
+			#clubPagination div.next { float: left; width:70px; }
+			#clubPagination div.next a { font-weight: bold; padding: 0 10px 0 0; color:#cc0000; background: url(../images/sidebar-table-a.gif) no-repeat right 5px; }
+			#clubPagination div.next a:hover { text-decoration: underline; }
+			#clubPagination div.prev { float: left; width:70px; }
+			#clubPagination div.prev a { font-weight: bold; padding: 0 0 0 10px; color:#cc0000; background: url(../images/sidebar-table-a1.gif) no-repeat left 5px; }
+			#clubPagination div.prev a:hover { text-decoration: underline; }
+	#footballer {}
+		#footballer h1 { font-size: 36px; color:#000; font-family: Arial, sans-serif; width: 669px; clear: both; padding: 10px 0 12px 11px; }
+		#footballer h3 { font-size: 21px; color:#4f4f4f; font-weight: normal; font-family: Arial, sans-serif;  width: 670px; clear: both; padding: 0 0 0 10px; }
+		#footballerNav { width: 676px; padding: 2px 0 0 4px; }
+			#footballerNav li { float: left; padding: 0 7px 0 8px; background: url(../images/nav-top-li.gif) no-repeat 0 2px; }
+			#footballerNav li a { float: left; color:#cc0000; }
+			#footballerNav li a:hover { text-decoration: underline; }
+		#footballerDesc { width: 100%; float: left; padding: 0 0 18px 0; }
+			#footballerImg { float: left; width: 440px; padding: 0 0 0 10px; }
+				#footballerImg img { display: block; }
+				#footballerImg p { width: 405px; background: #eaeaea; color:#484848; padding: 6px 10px; line-height: 15px; }
+				#footballerImg p span { color:#8d8d8d; }
+			#footballerImg1 { float: left; width: 190px; padding: 0 0 0 10px; }
+			#footballerRight1 { float: left; width: 460px; }
+				#footballerRight1 ul { font-size: 12px; color:#000; padding: 0 0 27px 0; margin-right:10px; overflow: hidden; float:left; width:215px; }
+				#footballerRight1 ul li { width: 100%; float: left; padding: 6px 0; border-bottom: 1px solid #f1f1f1; }
+				#footballerRight1 ul li span { float: left; width: 107px; }
+				#footballerRight1 ul li a { font-weight: bold; color:#cc0000; }
+				#footballerRight1 ul li a:hover { text-decoration: underline; }
+				#footballerRight1 ul li strong { float: left; }
+				#footballerRight1 ul li img { float: left; margin: 1px 10px 0 0; }
+				#footballerRight1 ol { font-size: 12px; color:#000; overflow: hidden; float:left; width:215px; }
+				#footballerRight1 ol li { width: 100%; float: left; padding: 6px 0; border-bottom: 1px solid #f1f1f1; }
+				#footballerRight1 ol li span { float: left; width: 143px; }
+				#footballerRight1 ol li strong { float: left; }
+			#footballerRight { float: left; width: 215px; }
+				#footballerRight ul { font-size: 12px; color:#000; padding: 0 0 27px 0; overflow: hidden; }
+				#footballerRight ul li { width: 100%; float: left; padding: 6px 0; border-bottom: 1px solid #f1f1f1; }
+				#footballerRight ul li span { float: left; width: 107px; }
+				#footballerRight ul li a { font-weight: bold; color:#cc0000; }
+				#footballerRight ul li a:hover { text-decoration: underline; }
+				#footballerRight ul li strong { float: left; }
+				#footballerRight ul li img { float: left; margin: 1px 10px 0 0; }
+				#footballerRight ol { font-size: 12px; color:#000; overflow: hidden; }
+				#footballerRight ol li { width: 100%; float: left; padding: 6px 0; border-bottom: 1px solid #f1f1f1; }
+				#footballerRight ol li span { float: left; width: 143px; }
+				#footballerRight ol li strong { float: left; }
+		#footballerTable { padding: 14px 0 20px 10px; width: 655px; overflow: hidden; }
+			#footballerTable p { width: 100%; padding: 7px 0 0 0; background: url(../images/footballer-table.gif) repeat-x 0 0 #D3D3D3; height: 19px; overflow: hidden; }
+			#footballerTable p span { float: left; }
+			#footballertable ul { font-size: 12px; }
+			#footballerTable ul li { padding: 7px 0 6px 0; border-bottom: 1px solid #ededed; width: 100%; float: left; }
+			#footballerTable ul li.dark { background:#f6f6f6; }
+			#footballerTable ul li span { float: left; padding: 0 0 0 1px; }
+				#footballerTable .t1 { width: 96px; padding: 0 0 0 9px !important; }
+				#footballerTable .t2 { width: 141px; }
+				#footballerTable .t3 { width: 158px; }
+				#footballerTable .t4 { width: 123px; }
+				#footballerTable .t5 { width: 117px; }
+		#footballerTableAll { padding: 14px 0 22px 10px; width: 655px; overflow: hidden; }
+			#footballerTableAll p { width: 100%; padding: 4px 0 0 0; background: url(../images/footballer-table.gif) repeat-x 0 0; height: 22px; overflow: hidden; }
+			#footballerTableAll p span { float: left; }
+			#footballerTableAll p span.t1,
+			#footballerTableAll p span.t2,
+			#footballerTableAll p span.t3 { float: left; padding-top: 3px; }
+			#footballerTableAll ul { font-size: 12px; }
+			#footballerTableAll ul li { padding: 7px 0 6px 0; border-bottom: 1px solid #ededed; width: 100%; float: left; }
+			#footballerTableAll ul li.dark { background:#f6f6f6; }
+			#footballerTableAll ul li span { float: left; }
+				#footballerTableAll .t1 { width: 96px; padding: 0 0 0 9px; }
+				#footballerTableAll .t2 { width: 252px; }
+				#footballerTableAll .t2 a { color:#cc0000; }
+				#footballerTableAll .t3 { width: 30px; text-align: right; padding: 0 44px 0 0; }
+				#footballerTableAll .t4 { width: 75px; text-align: center; }
+				#footballerTableAll .t5 { width: 73px; text-align: center; }
+				#footballerTableAll .t6 { width: 25px; text-align: center; }
+				#footballerTableAll .t7 { width: 37px; text-align: center; padding: 0 0 0 12px; }
+			#sum { width: 100%; background:#efefef; border-bottom: 1px solid #ededed; overflow: hidden; padding: 7px 0 6px 0; }
+			#sum span { float: left; background: none; padding: 0;  height: auto !important; font-weight: bold;  }
+		#footballerNews { width: 100%; padding: 16px 0 0 0; }
+		#footballerNews div.footballerNews a { color:#000000 !important; }
+			.footballerNews { float: left; width: 320px; margin: 0 4px 0 10px; }
+			.footballerNewsBox { overflow: hidden; width: 100%; }
+				.footballerNewsBox img { float: left; }
+				.footballerNewsBox a { float: left; padding: 0 0 0 15px; font-size: 12px; line-height: 17px; color:#000; width: 340px; } 
+				.footballerNewsBox a strong { float: left; width: 100%; }
+				.footballerNewsBox a em { float: left; width: 100%; font-style: normal; }
+				.footballerNewsBox a span { float: left; padding: 0 14px 0 0; font-weight: bold; font-size: 11px; color:#3c3c3c; background: url(../images/home-box-p-a.gif) no-repeat right 7px; }
+				.footballerNewsBox a:hover span { text-decoration: underline; }
+			.footballerNewsBoxZaw { overflow: hidden; width: 100%; }
+				.footballerNewsBoxZaw img { float: left; }
+				.footballerNewsBoxZaw a { float: left; padding: 0 0 0 15px; font-size: 12px; line-height: 17px; color:#000; width: 180px; } /* by³o width:170px; */
+				.footballerNewsBoxZaw a strong { float: left; width: 100%; }
+				.footballerNewsBoxZaw a em { float: left; width: 100%; font-style: normal; }
+				.footballerNewsBoxZaw a span { float: left; padding: 0 14px 0 0; font-weight: bold; font-size: 11px; color:#3c3c3c; background: url(../images/home-box-p-a.gif) no-repeat right 7px; }
+				.footballerNewsBoxZaw a:hover span { text-decoration: underline; }
+				.footballerNews ul { padding: 0px 0 0 0; }
+				.footballerNews ul li { padding: 5px 0; border-top: 1px solid #f6f6f6; width: 100%; }
+				.footballerNews ul li a { color:#000; font-size: 12px; }
+				.footballerNews ul li a:hover { text-decoration: underline; }
+	#pageNews { width: 680px; overflow: hidden; }
+		#pageNews h2 { font-size: 36px; padding: 5px 0 0 10px; }
+			#pageNews span.info { display: block; padding: 9px 0 7px 10px; font-weight: normal; font-size: 11px; color:#848484; }
+		#pageNewsText { padding: 0 0 0 10px; width: 660px; line-height: 16px; font-size: 12px; }
+		#pageNewsText a { color:#cc0000; }
+		#tags { margin: 20px 0 25px 10px; padding: 8px 11px; border: 1px solid #f0f0f0; background:#fafafa; width: 631px; color:#484848; }
+			#tags span { color:#484848; padding: 0 18px 0 0; background: url(../images/nav-top-li.gif) no-repeat 27px 2px; }
+			#tags a { color:#cc0000; }
+			#tags a:hover { text-decoration: underline; }
+    #link_sponsor { margin: 20px 0 25px 10px; padding: 8px 11px; border: 1px solid #f0f0f0; background:#fafafa; width: 631px; color:#484848; }
+			#link_sponsor span { color:#484848; padding: 0 18px 0 0; background: url(../images/nav-top-li.gif) no-repeat 93px 2px; }
+			#link_sponsor a { color:#cc0000; }
+			#link_sponsor a:hover { text-decoration: underline; }
+		#pageControl { overflow: hidden; padding: 0 0 25px 10px; width: 655px; }
+			#pageControlLeft { float: left; width: 400px; }
+			#pageControlRight { float: right; text-align: right; }
+			a#print { float: right; height: 19px; padding: 5px 0 0 48px; font-weight: bold; color:#cc0000; background: url(../images/print.png) no-repeat 0 0; }
+			a#send { float: right; height: 19px; padding: 5px 13px 0 31px; font-weight: bold; color:#cc0000; background: url(../images/send.png) no-repeat 0 0; }
+			#pageControl a:hover { text-decoration: underline; }
+		#pageNewsImg { float: left; width: 440px; padding: 0 0 7px 0; }
+			#pageNewsImg img { display: block; }
+			#pageNewsImg p { width: 405px; background: #eaeaea; color:#484848; padding: 6px 10px; line-height: 15px; font-size: 11px; }
+			#pageNewsImg p span { color:#8d8d8d; }
+			#pageNewsImg div div { background: #eeeeee; float:left; width:285px; padding:5px; overflow:hidden; }
+			#pageNewsImg div div a { font-size: 11px; color:#000; }
+			#pageNewsImg div div a:hover { text-decoration: underline; }
+			#pageNewsImg div { background: #F6F6F6; float:left; width:425px; }
+			#pageNewsImg div img { padding:5px; }
+      #pageNewsImg dl dt { display:block; padding: 4px 0 4px 8px; background: #ededed; border-bottom: 1px solid #f6f6f6; }
+		#pageNewsArticle { clear: both; padding-top: 10px; font-size: 16px; line-height: 21px; }
+		#pageNewsLinks { overflow: hidden; margin: 0 0 0 10px; padding: 0 0 10px 0; width: 654px; background: url(../images/page-news-links.gif) repeat-y 0 0; }
+			#pageNewsLinksLeft { float: left; width: 256px; padding: 0 0 0 15px; }
+			#pageNewsLinksLeft h3 { padding: 16px 0 10px 0; font-size: 17px; font-weight: normal; color:#505050; }
+			#pageNewsLinksLeft ul li { padding: 5px 0; border-top: 1px solid #e5e5e5; width: 237px; }
+			#pageNewsLinksLeft ul li:first-child { border: none; }
+			#pageNewsLinksLeft ul li a { font-size: 12px; color:#000; }
+			#pageNewsLinksLeft ul li a:hover { text-decoration: underline; }
+			#pageNews .footballerNews li { border-top: 1px solid #ededed; }
+			#pageNews .footballerNews { width: 355px; }
+			#pageNews .footballerNews h4 { padding: 16px 0 11px 0; font-size: 17px; font-weight: normal; color:#505050; }
+		#pageNewsSocialandComments { float: left; background-color: #f8f8f8; width: 216px; height: 328px; }
+			#pageNewsSocialandComments .fb-like { float: left; width: 88px; height:65px; padding-left: 10px; padding-top: 10px; }
+			#pageNewsSocialandComments .tweet { float: left; width: 98px; height:65px; padding-left: 20px; padding-top: 20px; }
+			#pageNewsSocialandComments .google-plus { float: left; width: 78px; height:65px; padding-left: 20px; padding-top: 15px; padding-bottom: 15px; }
+			#pageNewsSocialandComments .comment { float: left; width: 98px; padding-left: 14px; padding-top: 15px; padding-bottom: 15px; }
+			#pageNewsSocialandComments .comment .liczbaKomentarzy span{float:left;line-height:16px;color:#262626;display:inline-block;font:17px/18px Arial,sans-serif;font-weight:bold;height:30px;margin-top:1px;padding:7px 4px 2px 6px;text-align:center;vertical-align:top;width:71px;background-image:url("http://goal.pl/luba/global/page/images/skomentuj.png");background-position:50% 1%;background-repeat:no-repeat;border-right:none;cursor:auto}
+      #pageNewsSocialandComments .comment .liczbaKomentarzy button{float:left;font:11px Arial;color:#595959;border:1px solid #ccc;font-weight:bold;border-radius:2px 2px 2px 2px;margin-left:5px;height:20px;min-width:71px;overflow:visible;padding:0 3px 2px;text-align:center;vertical-align:top;cursor:pointer;background:#fff;}
+				#pageNewsSocialandComments .comment-area { clear: both; border-top: 1px solid #eaeaea; }
+					#pageNewsSocialandComments .comment-area .no-comment { text-align: center; padding-top: 42px; }
+						#pageNewsSocialandComments .comment-area .no-comment p { padding-top: 4px; }
+							#pageNewsSocialandComments .comment-area .no-comment a { color: #cc000e; }
+								#pageNewsSocialandComments .comment-area .no-comment a:hover { text-decoration: underline; }
+					#pageNewsSocialandComments .comment-area .last-comment { text-align: left; padding-top: 12px; }
+						#pageNewsSocialandComments .comment-area .last-comment h4 { font-size: 12px; color:#cc0000; padding-left: 15px; }
+							#pageNewsSocialandComments .comment-area .last-comment h4 span { font-size: 11px; color:#9a9a9a; font-weight: normal; }
+						#pageNewsSocialandComments .comment-area .last-comment p { padding-top: 4px; line-height: 15px; padding-left: 15px; }
+							#pageNewsSocialandComments .comment-area .last-comment p.headline { padding-bottom: 10px; text-align: center; padding-left: 0px !important; }
+							#pageNewsSocialandComments .comment-area .last-comment a { color: #cc000e; }
+								#pageNewsSocialandComments .comment-area .last-comment a:hover { text-decoration: underline; }
+							#pageNewsSocialandComments .comment-area .last-comment .options { font-size: 11px; padding-top: 5px; }
+								#pageNewsSocialandComments .comment-area .last-comment .options .more { padding-left: 50px; float: left; }
+								#pageNewsSocialandComments .comment-area .last-comment .options .reply { padding-left: 15px; float: left; }
+			
+		#pageComment {}
+			#pageComment h3 { font-size: 17px; font-weight: normal; color:#4f4f4f; padding: 27px 0 0 10px; }
+			#pageComment h3 span { font-size: 12px; color:#a0a0a0; }
+			.pageCommentBox { overflow: hidden; padding: 20px 0 0 10px; width: 670px; }
+			.pageCommentImg { float: left; width: 66px; }
+			.pageCommentText { float: left; width: 575px; }
+			.pageCommentText h4 { font-size: 12px; color:#cc0000; }
+			.pageCommentText h4 span { font-size: 11px; color:#9a9a9a; font-weight: normal; }
+			.pageCommentText p { padding: 5px 0 0 0; font-size: 12px; line-height: 17px; color:#474747; }
+			#pageCommentLink { overflow: hidden; padding: 25px 10px 0 10px; width: 640px; }
+				#pageCommentLink a { color:#cc0000; float: right; padding: 0 14px 0 0; text-align: right; background: url(../images/sidebar-table-a.gif) no-repeat right 5px;}
+				#pageCommentLink a:first-child { font-weight: bold; float: left; text-align: left; padding: 0 14px 0 0; background: url(../images/home-box-p-a.gif) no-repeat right 5px;  color:#3c3c3c; }
+				#pageCommentLink a:hover { text-decoration: underline; }
+		
+		
+	     
+	.pageOther { padding:10px; line-height: 17px; font-size:14px; color:#000; }
+	.pageOther h1 { font-size: 36px; color:#000; line-height: 100%; font-family: Arial, sans-serif; width: 669px; clear: both; padding: 10px 0 12px 11px; }
+	.pageOther h2 { font-size: 29px; color:#4f4f4f; font-weight: normal; padding-bottom:10px; }
+	.pageOther h3 { font-size: 21px; color:#4f4f4f; font-weight: normal; padding-bottom:10px; }
+	.pageOther h3.line { border-bottom:3px solid #D9D9D9; margin-bottom:10px !important; }
+	.pageOther a { color:#cc0000; }
+	.pageOther ol li { margin-left: 20px; margin-bottom:2px; list-style: decimal; }
+  .pageOther ol[type="a"] li { margin-left: 20px; margin-bottom:2px; list-style: lower-alpha!important; }
+	.pageOther a:hover { text-decoration: underline; }
+	.pageOther a.term { display:block; float:left; width:160px; margin: 0px 1px 1px 0px; padding: 5px 0; color:#cc0000 !important; text-align:center; background-color:#f0f0f0; }
+	.pageOther a.term:hover { background-color:#cc0000; color:#ffffff !important; }
+	
+	#pageGallery { padding:5px; }
+	         #pageGallery .gal_border { font-size:13px; color:#000;/*background-color:#F6F6F6;*/text-decoration:none; padding:0px; }
+	         #pageGallery .new_gal { border-collapse: collapse; margin-left: 12px; width: 97% !important;}
+	         #pageGallery .new_gal tr { width: 95%; }
+	         #pageGallery .new_gal tr.underlined { border-bottom: 1px solid #f2f2f2; }
+	         #pageGallery .new_gal td { padding: 15px 0px 0px 0px; }
+	         #pageGallery .gal_stat { font-size:13px; color:#000;background-color:#F6F6F6;text-decoration:none; width:670px; }
+	         #pageGallery h1 { font-size: 32px; padding: 0 0 0 10px; margin-top: 10px;  float: left;}
+	         #pageGallery ul.gal_stat2 { color: #6d6d6d;  float: right; margin-top: 25px; padding-right: 10px;}
+	         #pageGallery ul.gal_stat2 li { display: inline;  }
+	         #pageGallery ul.gal_stat2 li span { color: #d6d6d6;  margin: auto 10px; }
+	         #pageGallery ul.gal_stat2,
+             #pageGallery div.gal_nav ul { font-size: 12px;}
+	         #pageGallery div.gal_nav { border-top: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; padding:8px 10px 8px 12px; margin: 65px 0px 12px 0px; clear: both;}
+	         #pageGallery div.gal_nav ul { float: right;}
+	         #pageGallery div.gal_nav p { float: left;}
+	         #pageGallery div.gal_nav ul li { display: inline; color: #000; border-left: 1px solid #dedede; margin-left: 5px; padding-left: 5px;}
+	         #pageGallery div.gal_nav ul li:first-child { border-left: none;}
+	         #pageGallery div.gal_nav ul li:last-child { border-left: none; margin-left: 20px; font-weight: bold;}
+	         #pageGallery div.gal_nav ul li a { }
+	         #pageGallery div.gal_nav .disabled a { color: #aaa; cursor: default;}
+	         #pageGallery div.gal_nav.bottom { margin-top: 30px;}
+	         #pageGallery div.gal_nav.social { text-align: center; }
+	         #pageGallery div.gal_nav.social ul { float: none; }
+	         #pageGallery div.gal_nav.social ul li { position: relative; }
+	         #pageGallery div.gal_nav.social ul li:first-child { display: inline-block; top: 2px;}
+	         #pageGallery div.gal_nav.social ul li:last-child { top: -2px; margin-left: 15px;}
+	         #pageGallery div.gal_nav.social ul li a#send { padding: 0px 0px 0px 31px; height: 22px; line-height: 22px; float: none; cursor: pointer; display: inline-block;}
+	         #pageGallery .gal_naglowek { background:url('bg_nagl_b.gif') repeat-x #5B5B5B; height:22px; color:#fff; }
+	         #pageGallery a { color:#cc0000; }
+	         #pageGallery a.black, #pageGallery .black a { color:#000000; }
+	         #pageGallery a.red, #pageGallery .red a { color:#cc0000; }
+	         #pageGallery #album_desc { padding-left: 12px; padding-right: 10px; line-height: 1.5em;}
+	         #pageGallery #album_desc span { color: #8e8e8e; display: block;}
+	         #pageGallery a.gal_link1 { text-decoration:none; font-weight:bold; }
+	         #pageGallery a.gal_link1:hover { text-decoration:underline; font-weight:bold; }
+	         #pageGallery .gal_alb_tytul { font-weight:bold; }
+	         #pageGallery .gal_alb_link { font-weight:bold; color:#C00; font-size:14px; }
+	         #pageGallery .gal_border_alb {background-color:#fff;}
+	         #pageGallery .gal_border_alb h2 {line-height: 0.9em; margin-bottom: 10px;}
+	         #pageGallery .gal_border_alb a.read-more {color: #000000; font-weight: bold;margin-left: 10px;}
+	         #pageGallery .gal_border_alb span {clear: left; float: left; color: #8e8e8e; font-size: 11px; margin-bottom: 10px; }
+	         #pageGallery .gal_border_alb div.border {border-top: 1px solid #f2f2f2; clear: both; padding-bottom: 10px;}
+	         #pageGallery .gal_border_img { /*border:1px solid #929292;*/ margin: 0px 10px 15px 0px; float: left;}
+	         #pageGallery .last .gal_border_img { margin-right: 0px;}
+	         #pageGallery .zdj_nav { width: 100%; margin: 20px auto;}
+	         #pageGallery .zdj_nav td { width: 33%; text-align: center;}
+	         #pageGallery .zdj_nav a { line-height: 36px; text-align: center; font-weight: bold; display: block; width: 157px; height: 39px; background: url('/luba/global/strona/static/images/gal_zdj_btn.png') no-repeat 0 0 transparent; font-size: 12px; margin: auto;}
+
+	         #pageGallery .gal_page_wd { background-color: #ededed; padding: 0 3px; border:1px solid #fff; }
+	         #pageGallery .gal_page_wd a, #pageGallery .gal_page_wd_hover a { display:block; width:42px; }
+	         #pageGallery .gal_page_wd_hover { border:1px solid #fff; padding: 0 3px; background-color:#EFEAEA; }
+	         #pageGallery .gal_page1 { background-color: #ededed; border:1px solid #fff; }
+	         #pageGallery .gal_page1 a, #pageGallery .gal_page1_hover a { display:block; padding: 0 5px; }
+	         #pageGallery .gal_page1_hover { border:1px solid #fff; background-color:#EFEAEA; }
+	         #pageGallery .gal_page2 { border:1px solid #fff; background-color:#ccc; padding: 0 6px; }
+	
+			    
+/* SIDEBAR
+---------------------------------------------------------------------------*/
+#sidebar { float: left; width: 310px; padding: 0 0 25px 0; overflow: hidden; }
+	#sidebarAdv { padding: 0 0 11px 0; float: left; }
+	/* MECZ DNIA */
+	#mathDay { width: 300px; height: 147px; background: url(../images/math-day.jpg) no-repeat 0 0; float: left; }
+		#mathDay ul { float: left; width: 300px; padding: 11px 0 0 0; height: 23px; text-align: right; }
+		#mathDay ul li { float: right; color:#fff; padding: 0 10px 0 11px; background: url(../images/math-day-li.gif) no-repeat right 2px; }
+		#mathDay ul li:first-child { background: none; }
+		#mathText { padding: 0 0 0 6px; height: 75px; }
+		#mathDay .gosp { float:left; width:70px; text-align:center; margin-top:7px; }
+		#mathDay .gosc { float:left; width:70px; text-align:center; margin-top:7px; }
+		#mathDay .text { float:left; width:150px; overflow:hidden; text-align: center; }
+		#mathDay .text span { display: block; width:150px; height:25px; overflow :hidden; font-size: 15px; color:#000; font-weight: bold; padding: 1px 0 6px 0; }
+		#mathDay .text span a { display: block; font-size: 15px; width:160px; color:#000; font-weight: bold; padding: 12px 0 6px 0; }
+		#mathDay a.more { float: right; margin: 10px 9px 0 0; width: 150px; padding: 0 14px 0 0; background: url(../images/math-a.gif) no-repeat right 5px; font-weight: bold; text-align: right; color:#fff; }
+		#mathDay a.more:hover { text-decoration: underline; }
+  /* MECZ DNIA - KONIEC */
+	.sidebarTable { padding: 0 0 11px 0; overflow: hidden; float: left; width: 310px; }
+		.sidebarTable h3 { width: 292px; height: 20px; padding: 6px 0 0 8px; background: url(../images/headerNavBlue.gif) repeat-x 0 0; font-size: 11px; color:#fff; }
+		.sidebarTable dl dd { width: 300px; padding: 4px 0 4px 0; background: #fff;    border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTable dl dt { width: 300px; padding: 4px 0 4px 0; background: #f6f6f6; border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTable dl span { float: left; width: 92px; padding: 3px 0 0 6px; font-size: 12px; color:#000; }
+		.sidebarTable dl span:first-child { padding: 3px 6px 0 0; background: url(../images/sidebar-table-span.gif) no-repeat right 10px; }
+		.sidebarTable dl em { float: left; width: 48px; height: 20px; font-style: normal; font-size: 11px; color:#808080; background: url(../images/sidebar-table-em.gif) no-repeat center 8px; }
+		.sidebarTable dl em strong { float: left; width: 20px; text-align: center; margin: 3px 0 0 8px; }
+		.sidebarTable dl em strong:first-child { margin: 3px 0 0 0; }
+		.sidebarTable dl em.active { font-size: 12px; color:#fff; background: url(../images/sidebar-table-active.gif) no-repeat 0 0; }
+		.sidebarTable dl a { color:#000; }
+		.sidebarTable dl a.relation { float: left; margin: 0 0 0 9px; padding: 3px 12px 0 0; font-size: 11px; color:#F68F00; background: url(../images/sidebar-table-a.gif) no-repeat right 8px; }
+		.sidebarTable dl a:hover { text-decoration: underline; }
+	.sidebarTableFootballers { padding: 0 0 11px 0; overflow: hidden; float: left; width: 310px; }
+		.sidebarTableFootballers dl dd { width: 300px; padding: 4px 0 4px 0; background: #fff;    border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableFootballers dl dt { width: 300px; padding: 4px 0 4px 0; background: #f6f6f6; border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableFootballers dl span { float: left; width: 20px; padding: 3px 0 0 6px; font-size: 11px; color:#000; }
+		.sidebarTableFootballers dl strong { float: left; width: 117px; padding: 4px 0 4px 0; }
+		.sidebarTableFootballers dl em { float: left; width: 28px; height: 17px; padding: 3px 0 0 0; font-style: normal; font-size: 11px; color:#fff; font-weight: bold; background: url(../images/sidebar-footbollers-em.gif) no-repeat 0 0; text-align: center; }
+		.sidebarTableFootballers dl a { color:#F68F00; }
+		.sidebarTableFootballers dl a.league { float: left; margin: 0 0 0 9px; width:100px; overflow:hidden; padding: 3px 12px 0 0; font-size: 11px; color:#000; }
+		.sidebarTableFootballers dl a:hover { text-decoration: underline; }
+	/* strzelcy w ¶rodkowej kolumnie na podstronie klubowej */
+	.sidebarTableFootballersClub { padding: 0 0 11px 0; overflow: hidden; float: left; width: 235px; }
+		.sidebarTableFootballersClub dl dd { width: 235px; padding: 4px 0 4px 0; background: #fff;    border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableFootballersClub dl dt { width: 235px; padding: 4px 0 4px 0; background: #f6f6f6; border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableFootballersClub dl span { float: left; width: 20px; padding: 3px 0 0 6px; font-size: 11px; color:#000; }
+		.sidebarTableFootballersClub dl strong { float: left; width: 170px; padding: 4px 0 4px 0; }
+		.sidebarTableFootballersClub dl em { float: left; width: 28px; height: 17px; padding: 3px 0 0 0; font-style: normal; font-size: 11px; color:#fff; font-weight: bold; background: url(../images/sidebar-footbollers-em.gif) no-repeat 0 0; text-align: center; }
+		.sidebarTableFootballersClub dl a { color:#F68F00; }
+		.sidebarTableFootballersClub dl a:hover { text-decoration: underline; }
+	.sidebarTableLeague { padding: 0 0 11px 0; overflow: hidden; float: left; width: 310px; }
+		.sidebarTableLeague li { padding: 9px 0 6px 0; width: 300px; border-bottom: 1px solid #ededed; background: #f8f8f8; float: left; color:#000; font-size: 11px; }
+		.sidebarTableLeague li.special1 { background: #e7e7e7; }
+		.sidebarTableLeague li.special2 { background: #f2f2f2; }
+		.sidebarTableLeague li a { float: left; color:#000; width: 140px; font-size:12px; color:#F68F00; font-weight:bold; }
+		.sidebarTableLeague li em { float: left; font-style: normal; width: 23px; padding: 0 0 0 8px; }
+		.sidebarTableLeague li span { float: left; width: 40px; text-align: center; }
+		.sidebarTableLeague li strong { float: left; width: 35px; text-align: center; color:#474747; }
+		.sidebarTableLeague li a:hover { text-decoration: underline; }
+	.sidebarTableContent { padding: 0 0 17px 0; overflow: hidden; float: left; width: 310px; font-size: 12px; }
+		.sidebarTableContent dl dd { width: 300px; padding: 8px 0 8px 5px; background: #fff;    border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableContent dl dt { width: 300px; padding: 8px 0 8px 5px; background: #f6f6f6; border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableContent dl a { color:#000; }
+		.sidebarTableContent dl a.relation { float: left; margin: 0 0 0 9px; padding: 3px 12px 0 0; font-size: 11px; color:#cc0000; background: url(../images/sidebar-table-a.gif) no-repeat right 8px; }
+		.sidebarTableContent dl a:hover { text-decoration: underline; }
+	.sidebarTitle { float: left; font-size: 17px; color:#4f4f4f; font-weight: normal; padding: 9px 0 13px 0; }
+.rectangle { padding-bottom: 25px; }
+
+#sidebar table.tabela_wyniki { width:300px; font-size:12px; padding:0px; margin:0px; background-color:#F8F8F8; }
+#sidebar table.tabela_wyniki tbody {  }
+#sidebar table.tabela_wyniki tbody tr td { padding:5px 0; }
+#sidebar table.tabela_wyniki tbody tr td a { color:#F68F00; font-weight:bold; }
+#sidebar h2 { padding-bottom: 8px; color: #246201; font-size:17px !important; }
+	
+/* FOOTER
+---------------------------------------------------------------------------*/
+#footerNews { width: 992px; overflow: hidden; padding: 0 0 25px 0; }
+	.footerNewsBox { float: left; width: 151px; padding: 0 3px 0 10px; }
+	.footerNewsBox h4 { font-size: 17px; color:#cc0000; font-weight: normal; padding: 0 0 15px 0; }
+	.footerNewsBox a { display: block; margin: 0 0 12px 0; }
+	.footerNewsBox a img { display: block; }
+	.footerNewsBox ul { font-size: 12px; }
+	.footerNewsBox ul li { width: 151px; padding: 4px 0 5px 0; border-top: 1px solid #ededed; }
+	.footerNewsBox ul li:first-child { border: none; }
+	.footerNewsBox ul li a { margin: 0; color:#000; }
+	.footerNewsBox ul li a:hover { text-decoration: underline; }
+#footerAdv { width: 992px; padding: 0 0 16px 0; clear: both; text-align: center; }
+#footer { width: 992px; border-bottom: 25px solid #000000; background: #444444; padding: 18px 0 15px 0; clear: both; overflow: hidden; }
+	#footerBox { width: 992px; background: url(../images/footer.gif) repeat-y 0 0; float: left;}
+	#footerBox ul { float: left; width: 142px; line-height: 18px; padding: 0 0 0 22px; }
+	#footerBox ul:first-child { width: 132px; margin-top: -8px; padding-top: 37px; background: url(../images/footer-logo.jpg) no-repeat 22px 0; }
+	#footerBox ul li strong { font-weight: normal; display: block; padding: 0 0 17px 0; font-size:15px; color:#fff; line-height: 12px; }
+	#footerBox ul li a { font-size: 12px; color:#b6b6b6; }
+	#footerBox ul li a:hover { text-decoration: underline; }
+
+/* MOJE
+-------------------------------------------------------------------------*/
+#addComment {}
+#addComment h3 { font-size: 17px; font-weight: normal; color:#4f4f4f; padding: 27px 0 0 10px; }
+#addCommentText { float: left; }
+.addCommentTextInfo { color: #646464; padding-bottom: 12px; font-size: 12px; }
+.addCommentUserInfo { color: #9a9a9a; padding-bottom: 12px; font-size: 11px; }
+.addCommentUserInfo span { color: #cc0000; font-size: 12px; font-weight: bold; }
+#addCommentText input { float: left; width: 220px; height: 24px; height: 19px\9; padding: 0 6px; padding-top: 5px\9; background: url(../images/addCommentinput.gif) no-repeat 0 0; font-size: 12px; font-family: Arial, sans-serif; color: #646464; }
+#addCommentText textarea { float: left; width: 556px; height: 98px; padding: 0 6px; padding-top: 5px\9; background: url(../images/textarea.gif) no-repeat 0 0; resize: none; font-size: 12px; padding-top:3px; padding-right: 10px; font-family: Arial, sans-serif; color: #646464; }
+#addCommentSubmit { float: left; padding: 0 0 0 3px; }
+#addCommentSubmit input { float: left; width: 65px; height: 28px; background: url(../images/login.gif) no-repeat 0 0; cursor: pointer; }
+#addCommentSubmit2 { float: left; padding: 10px 0 0 65px; }
+#addCommentSubmit2 input { float: left; width: 65px; height: 28px; background: url(../images/add-comment.gif) no-repeat 0 0; cursor: pointer; }
+.addCommentFunctions { clear:both; padding-left: 67px; padding-top: 7px; color: #dfdfdf }
+.addCommentFunctions a { color: #989898 !important; text-decoration: underline; }
+.addCommentFunctions a:hover { text-decoration:none; }
+#login h3 { font-size: 17px; font-weight: normal; color:#4f4f4f; padding: 27px 0 15px 10px; }
+#register h3 { font-size: 17px; font-weight: normal; color:#4f4f4f; padding: 27px 0 15px 10px; }
+#login table { font-size: 12px; }
+#register table { font-size: 12px; }
+#login table a:link { text-decoration: underline; color: #989898; }
+#login table a:hover { text-decoration: none; }
+#register table a:link { text-decoration: underline; color: #989898; }
+#register table a:hover { text-decoration: none; }
+.tmargin { padding-left: 3px; }
+#loginInput input { float: left; width: 220px; height: 24px; height: 19px\9; padding: 0 6px; padding-top: 5px\9; background: url(../images/addCommentinput.gif) no-repeat 0 0; font-size: 12px; font-family: Arial, sans-serif; color: #646464; }
+#loginSubmit { float: left; width: 65px; height: 28px; background: url(../images/login.gif) no-repeat 0 0; cursor: pointer; }
+#loginSubmit input[type=submit] { width: 65px; height: 28px; background-color:transparent; cursor: pointer; }
+#registerSubmit { float: right; width: 106px; height: 28px; background: url(../images/register.gif) no-repeat 0 0; cursor: pointer; margin-right: 20px; }
+#registerSubmit input { width: 106px; height: 28px; background-color:transparent; cursor: pointer; }
+.chckbx { margin-left: 3px; margin-right: 6px; }
+
+#print, #send, .c_pointer { cursor:pointer; }
+
+/* STRONICOWANIE 
+---------------------------------------------------------------------------*/
+#newsPagination { width: 520px; padding: 19px 0 19px 2px; font-size: 14px; overflow: hidden; margin:auto; }
+#newsPagination div.page { text-align:center; width:355px; float:left; }
+#newsPagination span { padding: 0 4px 0 4px; color:#dfdfdf; }
+#newsPagination a { color:#cc0000; }
+#newsPagination a:hover { text-decoration: underline; }
+#newsPagination a.active { color:#000; font-weight: bold; }
+#newsPagination div.next { float: left; width:70px; }
+#newsPagination div.next a { font-weight: bold; padding: 0 10px 0 0; color:#cc0000; background: url(../images/sidebar-table-a.gif) no-repeat right 5px; }
+#newsPagination div.next a:hover { text-decoration: underline; }
+#newsPagination div.prev { float: left; width:70px; }
+#newsPagination div.prev a { font-weight: bold; padding: 0 0 0 10px; color:#cc0000; background: url(../images/sidebar-table-a1.gif) no-repeat left 5px; }
+#newsPagination div.prev a:hover { text-decoration: underline; }
+
+/* NOTY MECZU
+-------------------------------------------------------------------------*/
+#pageMatch { padding:5px; font-size:12px; }
+              #matchResult { background: url(../images/math-day-big.jpg) no-repeat center center; width:660px; height:300px; }
+              #matchResult .nameGosp { float:left; width:270px; height:30px; padding:25px 60px 0 0; text-align:right; overflow:hidden; }
+              #matchResult .nameGosp a, #matchResult .nameGosc a { font-size:22px; width :570px; font-weight:bold; color:#000; }
+              #matchResult .nameGosc { float:left; width:270px; height:30px; padding:25px 0 0 60px; text-align:left; overflow:hidden; }
+              #matchResult .herbGosp { float:left; padding: 47px 0 0 40px; width:120px; height:120px; }
+              #matchResult .herbGosc { float:left; padding: 47px 40px 0 0; width:120px; height:120px; }
+              #matchResult .termin { float:left; padding-top: 65px; width:340px; font-size:30px; font-weight:bold; text-align:center; }
+              #matchResult .resultGosp { float:left; padding: 62px 45px 0 0; width:120px; font-size:68px; font-weight:bold; text-align:right; }
+              #matchResult .resultGosc { float:left; padding: 62px 0 0 45px; width:120px; font-size:68px; font-weight:bold; }
+              #matchResult .result { float:left; padding: 62px 0 0 0; width:10px; font-size:65px; font-weight:bold; text-align:center; }
+              #matchResult .data { clear:both; padding-top: 28px; font-size:18px; font-weight:bold; text-align:center; }
+              #matchResult .godzina { padding-top: 5px; font-size:18px; font-weight:bold; text-align:center; }
+              #pageMatch h3 { font-size: 21px; color:#4f4f4f; font-weight: normal; text-align:left; width: 660px; clear: both; padding: 0 0 0 10px; xbackground: url(../images/footballer-table.gif) repeat-x 0 0; border-bottom: 3px solid #d9d9d9;}
+              #pageMatch div.info { font-weight: bold; width: 100px; clear: both; padding: 0 0 7px 10px; float:left; }
+              #pageMatch div.info2 { float:left; }
+                  #matchTable { padding: 14px 0 20px 10px; width: 655px; overflow: hidden; }
+		        #matchTable ul { font-size: 12px; }
+		        #matchTable ul li { padding: 7px 0 6px 0; border-bottom: 1px solid #ededed; width: 100%; float: left; }
+		        #matchTable ul li span { width: 310px; float:left; }
+		        #matchTable ul li span img { vertical-align:middle; }
+		        #matchTable ul li span a {font-size:14px; color:#cc0000; }
+		        #matchTable ul li.dark { background:#f6f6f6; }
+	    	        #matchTable .t1 { width: 96px; padding: 0 0 0 9px !important; }
+     	    	        #matchTable .t2 { width: 141px; }
+
+/* MOJE
+-------------------------------------------------------------------------*/
+.bold { font-weight:bold; }
+.red { color:#cc000e !important; }
+.black { color:#000000 !important; }
+.green { color:#51963f !important; }
+.gray { color:#ADADAD; }
+.gray1 { color:#6D6D6D; }
+.linia { border-top:1px solid #ECECEC; margin: 20px 0; }
+.t_center { text-align:center; }
+.t_right { text-align:right; }
+.clear { clear:both; }
+.t_10 { font-size:10px; }
+.t_12 { font-size:12px; }
+.t_14 { font-size:14px!important; }
+.mt_5 { margin-top:5px; }
+.pt_5 { padding-top:5px; }
+.pt_10 { padding-top:10px; }
+.pl_10 { padding-left:10px; }
+.pr_5 { padding-right:5px; }
+
+.czytaj_wiecej { padding: 0 14px 0 0;  background: url(../images/home-news-right-a.gif) no-repeat right 5px; }
+
+.naglowek { padding: 16px 0 10px 0; font-size: 17px; color:#505050; }
+
+table td { padding:3px; }
+
+input.input1[type="text"], input.input1[type="password"] { float: left; width: 253px; height: 24px; height: 19px\9; padding: 0 10px; padding-top: 5px\9; background: url(../images/search-text.gif) no-repeat 0 0; font-size: 12px; font-family: Arial, sans-serif; }
+input.input2[type="text"], input.input2[type="password"] { float: left; width: 430px; height: 24px; height: 19px\9; padding: 0 10px; padding-top: 5px\9; background: url(../images/input2.gif) no-repeat 0 0; font-size: 12px; font-family: Arial, sans-serif; }
+input.input3[type="text"], input.input3[type="password"] { width: 253px; height: 24px; height: 19px\9; padding: 0 10px; padding-top: 5px\9; background: url(../images/search-text.gif) no-repeat 0 0; font-size: 12px; font-family: Arial, sans-serif; }
+input.input[type="text"] { border:1px solid #D1D1D1; font-size: 12px; font-family: Arial, sans-serif; }
+input.input[type="button"] { background-color:#D1D1D1; font-size: 12px; font-family: Arial, sans-serif; }
+select.input1 { float: left; width: 273px; height: 24px; height: 19px\9; padding: 0 0 0 10px; padding-top: 4px; background: url(../images/search-text.gif) no-repeat 0 0; font-size: 12px; font-family: Arial, sans-serif; }
+input.buttonWyslij { float: left; width: 65px; height: 28px; background: url(../images/button-wyslij.gif) no-repeat 0 0; cursor: pointer; }
+input.buttonZapisz { float: left; width: 65px; height: 28px; background: url(../images/button-zapisz.gif) no-repeat 0 0; cursor: pointer; }
+
+
+#tabela { padding:11px; font-size:12px; }
+
+#tabela .wiersz1, #tabela > tbody tr:nth-child(odd) { background: #fff; }
+#tabela .wiersz1 td.li, #tabela > tbody td { padding: 4px; border-bottom: 1px solid #ededed; }
+#tabela .wiersz2, #tabela > tbody tr:nth-child(even) { background: #f6f6f6; }
+#tabela .wiersz2 td.li { padding: 4px; border-bottom: 1px solid #ededed; }
+#tabela > tfoot > tr { background-color:#d0dbef; padding:3px; }
+#tabela > tfoot tr td { border-top:1px solid #7988a4; padding:3px; }
+#tabela tr.naglowek td, #tabela > thead > tr > td { background: url(../images/sidebar-table-h3.gif) repeat-x 0 0 #929292; font-size: 14px; font-weight:bold; text-align:center; color:#fff; overflow: hidden; }
+#tabela > thead > tr.small { background: url(../images/sidebar-table-h3.gif) repeat-x 0 0; font-size: 11px; font-weight:normal; text-align:center; color:#fff; overflow: hidden; }
+#tabela .naglowek td, #tabela > thead tr td { height: 26px; padding:4px; }
+
+#tabela1 { padding:4px; font-size:12px; }
+#tabela1 > thead > tr { background: url(../images/sidebar-table-h3.gif) repeat-x 0 0; font-size: 11px; font-weight:normal; text-align:center; color:#fff; overflow: hidden; padding:0px; }
+#tabela1 > thead tr td { height: 20px; line-height:13px; }
+#tabela1 > tbody tr:nth-child(odd) { background: #fff; }
+#tabela1 > tbody td { padding: 4px; border-bottom: 1px solid #ededed; }
+#tabela1 > tbody tr:nth-child(even) { background: #f6f6f6; }
+#tabela1 > tfoot > tr { background: url(../images/sidebar-table-h3.gif) repeat-x 0 0; font-size: 11px; font-weight:normal; text-align:center; color:#fff; overflow: hidden; padding:0px; }
+#tabela1 > tfoot > tr td { height: 20px; }
+
+/* ---------------- modul sondy do artylulu ------------------------ */
+#sonda_art { background: #eeeeee; margin-top:10px; padding:10px; }
+#sonda_art h4 { padding: 0px 0 11px 0; font-size: 17px; font-weight: normal; color:#505050; }
+#sonda_art .pytanie { font-weight:bold; margin-bottom:5px; }
+#sonda_art form { margin-left:0px; }
+#sonda_art div.submit { margin-top:5px; }
+#sonda_art div.submit div { float:left; width: 76px; height: 28px; background: url(../images/button-glosuj.gif) no-repeat 0 0; cursor: pointer; }
+#sonda_art div.submit div input { width: 65px; height: 28px; background-color:transparent; cursor: pointer; }
+#sonda_art div.odp { margin:3px 0; }
+
+.button_pokaz_wyniki { display:block; margin:5px 0 5px 0; width: 118px; height: 28px; background: url(http://static.goal.pl/images/button-pokaz-wyniki.gif) no-repeat 0 0; cursor: pointer; }
+
+/* ------------------ relacje online ------------------------- */
+#pole_relacji { background-color:#EEEEEE; padding:10px; margin-top:10px; }
+#tresc_relacji .relacja_pozycja { margin:5px; border-bottom:1px solid #c0c0c0; padding-bottom:10px; }
+#tresc_relacji .relacja_czas { float:left; width:70px; font-weight:bold; }
+#tresc_relacji .relacja_tresc { float:left; width:469px; font-size:14px; }
+#tresc_relacji .relacja_tresc > img {  max-height:14px; }
+#tresc_relacji .relacja_opis { clear:left; margin-left:70px; width:400px; }
+
+/* ------------------ relacje online - koniec ------------------------- */
+
+/* poczatek input file */
+div.fileinputs { position: relative; width:365px; height:28px; overflow:hidden; float:left; }
+div.filefield { float:left; width:220px; margin-top:3px; }
+div.filefield input[type=text] { float: left; width: 210px; height: 24px; height: 19px\9; padding: 0 6px; padding-top: 5px\9; background: url(http://static.goal.pl/images/addCommentinput.gif) no-repeat 0 0; font-size: 12px; font-family: Arial, sans-serif; color: #646464; }
+div.fileinputs1 { position: relative; width:131px; overflow:hidden; }
+div.fakefile { position: absolute; top: 0px; left: 225px; z-index: 1; }
+input.file { position: relative; text-align: right; -moz-opacity:0; filter:alpha(opacity: 0);	opacity: 0; z-index: 2; cursor:pointer; border:1px solid #000; }
+/* koniec input file */
+
+/* okno informacyjne */
+#ramka_ok { background-color: #F6F6F6; width:85%; margin:20px auto; border:1px solid #adadad; -moz-border-radius: 9px 9px; -webkit-border-radius: 9px 9px;  border-radius: 9px 9px; padding:15px; }
+#ramka_ok div:first-child { float:left; width:50px; }
+#ramka_ok div:first-child  img {  }
+#ramka_ok div.info { float:left; padding-top:6px; font-size:12px; font-weight:bold; color:#808080; }
+/* koniec - okno informacyjne */
+
+/* okno informacyjne */
+#ramka_blad { background-color: #EDADAD; width:85%; margin:20px auto; border:1px solid #E03838; -moz-border-radius: 9px 9px; -webkit-border-radius: 9px 9px;  border-radius: 9px 9px; padding:15px; }
+#ramka_blad div:first-child { float:left; width:50px; }
+#ramka_blad div:first-child  img {  }
+#ramka_blad div.info { float:left; padding-top:6px; font-size:12px; font-weight:bold; color:#4c7227; }
+/* koniec - okno informacyjne */

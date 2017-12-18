@@ -1,0 +1,199 @@
+.welcome .row-fluid { width: 600px; margin: 0 auto; }
+.welcome.widgetList .row-fluid { width: 700px; margin: 0 auto; }
+.welcome.widgetList a.delete { background: url(../img/common/action_icons_sprite.png) 0 0; display:inline-block; width: 13px; height: 13px; }
+.welcome img { display: block; margin: 40px auto; }
+.welcome .widget { padding: 20px; }
+.welcome .widget div { background: #f0f0f0; padding: 10px; border: 1px solid #dedede; margin-bottom: 10px; }
+.welcome ul.links { margin: 10px 0 0; }
+.welcome ul.links li { border-bottom: 1px solid #dedede; padding: 10px 10px 10px 180px; }
+.welcome ul.links li:last-child { border-bottom: none; }
+.welcome ul.links li a { color: #000; display: inline-block; line-height: 20px; }
+.welcome ul.links li a:hover { text-decoration: none; }
+.ico.idea { vertical-align: middle; background: url(../img/shoplowidget/icons_sprite.png) no-repeat 0 0; width: 21px; height: 20px; display: inline-block; margin-right: 14px; }
+.ico.widgets { vertical-align: middle; background: url(../img/shoplowidget/icons_sprite.png) no-repeat 0 -20px; width: 27px; height: 26px; display: inline-block; margin-right: 8px; }
+
+.settings .topContent { padding: 20px; background:#fbfbfb;border-bottom:1px solid #f1f1f1; -webkit-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; }
+.settings .topContent form label { font-weight: bold; }
+.settings .topContent form .input-append .add-on { margin-left: -5px; }
+.settings .topContent form input[type=submit] { font-weight: bold; }
+.settings .topContent form .product { border-top: 1px solid #e5e5e5; margin: 0; }
+.settings .topContent form .product div { width: 420px; margin: 20px auto 0; }
+.settings .bottomContent { padding: 30px; -webkit-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; }
+
+.preview { width: 200px; margin: 0 auto; text-align: center; box-shadow: 0 0 10px 4px #eee; font-family: Helvetica,Arial,sans-serif; font-size: 13px; }
+.preview h3 { cursor: pointer; font-size: 18px; line-height: 27px; margin: 0; }
+.bottomContent .preview h3:hover
+.preview.product { width: 200px; }
+.preview.gallery { width: 820px; }
+.preview.product input[type=text] { width: 90%; }
+.preview.gallery input[type=text] { width: 50%; }
+
+.productWidget { text-align: center; padding: 10px; }
+.productWidget form { margin: 0; clear: both; font-size: 15px; }
+.productWidget form span.price { float: left; font-weight: bold; }
+.productWidget form button { float: right; color: #fff; background: #000; padding: 3px 8px; border: none; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; font-family: Helvetica,Arial,sans-serif; font-size: 13px; line-height: 18px; }
+.productWidget .top, .productWidget .center { border-bottom: 1px solid #e8e8e8; }
+.productWidget .top { padding: 0 0 10px; }
+.productWidget .center { padding: 20px 0; }
+.productWidget .bottom { padding: 10px 0 0; }
+
+.galleryWidget .top { border-bottom: 1px solid #e8e8e8; padding: 10px; margin: 0 10px 10px; text-align: left; }
+.galleryWidget h3 { text-align: left; }
+.galleryWidget ul li { float: left; margin: 0 10px; padding-top:10px; line-height: 18px; }
+.galleryWidget ul li .content { padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #e8e8e8; line-height: 150px; }
+.galleryWidget ul li a { color: #000; text-decoration: none; }
+.galleryWidget ul li a:hover { text-decoration: none; }
+.galleryWidget ul li p.price { font-weight: bold; }
+.galleryWidget ul li p.title { height: 36px; overflow: hidden; }
+.galleryWidget ul.th240 li { width: 240px; }
+
+img{max-width:100%;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic}
+.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:""}.clearfix:after{clear:both}
+ul, ol {
+    margin: 0 0 9px 25px;
+    padding: 0;
+}
+ul {
+    list-style: none outside none;
+}
+.alignCenter{
+    text-align: center !important;
+}
+div.layout
+{
+    text-align: center;
+}
+div.centre
+{
+    text-align: left;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagination {
+    height:36px;
+    margin:18px 0 10px 10px;
+}
+
+.pagination ul {
+    display:inline;
+    zoom:1;
+    margin-left:0;
+    margin-bottom:0;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow:0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow:0 1px 2px rgba(0,0,0,.05);
+    box-shadow:0 1px 2px rgba(0,0,0,.05);
+}
+
+.pagination li {
+    display:inline-block;
+    border-radius:3px;
+    margin: 0 2px;
+}
+a:link{
+    color:grey;
+}
+.pagination a {
+    float:left;
+    line-height:34px;
+    text-decoration:none;
+    padding:0 12px;
+    color: black;
+}
+
+.rightArrow{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3px 0 3px 5.2px;
+    border-color: transparent transparent transparent #000000;
+    margin: 0 auto;
+}
+
+.leftArrow{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3px 5.2px 3px 0;
+    border-color: transparent #000000 transparent transparent;
+    margin: 0 auto;
+}
+
+.arrowPlace {
+    background-color: #C2CBCA;
+    width: 34px;
+    height: 34px;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.arrowPlace:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    z-index: -1;
+    width: inherit;
+    height: inherit;
+    display: block;
+    background: linear-gradient( 90deg, #fff 60%, rgba(255, 255, 255, 0.8) 100% );
+
+}
+.page a:hover,.pagination .active a {
+    /*background-color:#D31751;*/
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    /*color: #fff;*/
+}
+
+.pagination .disabled span,.pagination .disabled a,.pagination .disabled a:hover {
+    color:#999;
+    background-color:transparent;
+    cursor:default;
+}
+
+.pagination li:first-child a {
+    border-left-width:1px;
+    -webkit-border-radius:3px 0 0 3px;
+    -moz-border-radius:3px 0 0 3px;
+    border-radius:3px 0 0 3px;
+}
+
+.pagination-centered {
+    text-align:center;
+}
+
+.pager {
+    margin-left:0;
+    margin-bottom:18px;
+    list-style:none;
+    text-align:center;
+    zoom:1;
+}
+
+.pager li {
+    display:inline;
+}
+
+.pager a {
+    display:inline-block;
+    padding:5px 14px;
+}
+
+div.centre
+{
+    text-align: left;
+    width: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#widgetHtml form { margin: 0; }

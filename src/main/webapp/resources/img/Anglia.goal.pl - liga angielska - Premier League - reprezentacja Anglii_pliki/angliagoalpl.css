@@ -1,0 +1,64 @@
+#sidebar { float: left; width: 310px; padding: 0 0 25px 0; overflow: hidden; }
+	#sidebarAdv { padding: 0 0 11px 0; float: left; }
+	#mathDay { width: 300px; height: 147px; background: url(http://static.goal.pl/images/math-day.jpg) no-repeat 0 0; float: left; }
+		#mathDay ul { float: left; width: 300px; padding: 11px 0 0 0; height: 23px; text-align: right; }
+		#mathDay ul li { float: right; color:#fff; padding: 0 10px 0 11px; background: url(http://static.goal.pl/images/math-day-li.gif) no-repeat right 2px; }
+		#mathDay ul li:first-child { background: none; }
+		#mathText { padding: 0 0 0 6px; height: 75px; }
+		#mathDay img { float: left; }
+		#mathDay p { float: left; width: 175px; text-align: center; }
+		#mathDay p span { display: block; font-size: 15px; color:#000; font-weight: bold; padding: 12px 0 6px 0; }
+		#mathDay a { float: right; margin: 7px 9px 0 0; width: 150px; padding: 0 14px 0 0; background: url(http://static.goal.pl/images/math-a.gif) no-repeat right 5px; font-weight: bold; text-align: right; color:#fff; }
+		#mathDay a:hover { text-decoration: underline; }
+	.sidebarTable { padding: 0 0 11px 0; overflow: hidden; float: left; width: 310px; }
+		.sidebarTable h3 { width: 292px; height: 20px; padding: 6px 0 0 8px; background: url(http://static.goal.pl/images/header-sidebar-blue.gif) repeat-x #b91917 !important; color:#ffffff !important; font-size: 11px; color:#fff; }
+		.sidebarTable dl dd { width: 300px; padding: 4px 0 4px 0; background: #fff;    border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTable dl dt { width: 300px; padding: 4px 0 4px 0; background: #f6f6f6; border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTable dl span { float: left; width: 92px; padding: 3px 0 0 6px; font-size: 11px; color:#000; }
+		.sidebarTable dl span:first-child { padding: 3px 6px 0 0; background: url(http://static.goal.pl/images/sidebar-table-span.gif) no-repeat right 10px; }
+		.sidebarTable dl em { float: left; width: 48px; height: 20px; font-style: normal; font-size: 11px; color:#808080; background: url(http://static.goal.pl/images/sidebar-table-em.gif) no-repeat center 8px; }
+		.sidebarTable dl em strong { float: left; width: 20px; text-align: center; margin: 3px 0 0 8px; }
+		.sidebarTable dl em strong:first-child { margin: 3px 0 0 0; }
+		.sidebarTable dl em.active { font-size: 12px; color:#ffffff; background: url(http://static.goal.pl/images/sidebar-table-active4.gif) no-repeat 0 0; }
+		.sidebarTable dl a { color:#000; }
+		.sidebarTable dl a.relation { float: left; margin: 0 0 0 9px; padding: 3px 12px 0 0; font-size: 11px; color:#e8213e; background: url(http://static.goal.pl/images/sidebar-table-a.gif) no-repeat right 8px; }
+		.sidebarTable dl a:hover { text-decoration: underline; }
+	.sidebarTableFootballers { padding: 0 0 11px 0; overflow: hidden; float: left; width: 310px; }
+		.sidebarTableFootballers dl dd { width: 300px; padding: 4px 0 4px 0; background: #fff;    border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableFootballers dl dt { width: 300px; padding: 4px 0 4px 0; background: #f6f6f6; border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableFootballers dl span { float: left; width: 20px; padding: 3px 0 0 6px; font-size: 11px; color:#000; }
+		.sidebarTableFootballers dl strong { float: left; width: 117px; padding: 4px 0 4px 0; }
+		.sidebarTableFootballers dl em { float: left; width: 28px; height: 17px; padding: 3px 0 0 0; font-style: normal; font-size: 11px; color:#ffffff; font-weight: bold; background: url(http://static.goal.pl/images/sidebar-footbollers-em4.gif) no-repeat 0 0; text-align: center; }
+		.sidebarTableFootballers dl a { color:#e8213e; }
+		.sidebarTableFootballers dl a.relation { float: left; margin: 0 0 0 9px; padding: 3px 12px 0 0; font-size: 11px; color:#cc0000; background: url(http://static.goal.pl/images/sidebar-table-a.gif) no-repeat right 8px; }
+		.sidebarTableFootballers dl a:hover { text-decoration: underline; }
+	.sidebarTableLeague { padding: 0 0 11px 0; overflow: hidden; float: left; width: 310px; }
+		.sidebarTableLeague li { padding: 9px 0 6px 0; width: 300px; border-bottom: 1px solid #ededed; background: #f8f8f8; float: left; color:#000; font-size: 11px; }
+		.sidebarTableLeague li:first-child { background: #e7e7e7; }
+		.sidebarTableLeague li.special { background: #f2f2f2; }
+		.sidebarTableLeague li a { float: left; color:#e8213e; width: 140px; }
+		.sidebarTableLeague li em { float: left; font-style: normal; width: 23px; padding: 0 0 0 8px; }
+		.sidebarTableLeague li span { float: left; width: 32px; text-align: center; }
+		.sidebarTableLeague li strong { float: left; width: 30px; text-align: center; color:#474747; }
+		.sidebarTableLeague li a:hover { text-decoration: underline; }
+	.sidebarTableContent { padding: 0 0 17px 0; overflow: hidden; float: left; width: 310px; font-size: 12px; }
+		.sidebarTableContent dl dd { width: 300px; padding: 8px 0 8px 0; background: #fff;    border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableContent dl dt { width: 300px; padding: 8px 0 8px 0; background: #f6f6f6; border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableContent dl a { color:#000; }
+		.sidebarTableContent dl a.relation { float: left; margin: 0 0 0 9px; padding: 3px 12px 0 0; font-size: 11px; color:#cc0000; background: url(http://static.goal.pl/images/sidebar-table-a.gif) no-repeat right 8px; }
+		.sidebarTableContent dl a:hover { text-decoration: underline; }
+	.sidebarTitle { float: left; font-size: 17px; color:#4f4f4f; font-weight: normal; padding: 9px 0 13px 0; }
+
+  .sidebarTableFootballersClub { padding: 0 0 11px 0; overflow: hidden; float: left; width: 235px; }
+		.sidebarTableFootballersClub dl dd { width: 235px; padding: 4px 0 4px 0; background: #fff;    border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableFootballersClub dl dt { width: 235px; padding: 4px 0 4px 0; background: #f6f6f6; border-bottom: 1px solid #ededed; overflow: hidden; }
+		.sidebarTableFootballersClub dl span { float: left; width: 20px; padding: 3px 0 0 6px; font-size: 11px; color:#000; }
+		.sidebarTableFootballersClub dl strong { float: left; width: 170px; padding: 4px 0 4px 0; }
+		.sidebarTableFootballersClub dl em { float: left; width: 28px; height: 17px; padding: 3px 0 0 0; font-style: normal; font-size: 11px; color:#fff; font-weight: bold; background: url(http://static.goal.pl/images/sidebar-footbollers-em4.gif) no-repeat 0 0; text-align: center; }
+		.sidebarTableFootballersClub dl a { color:#F68F00; }
+		.sidebarTableFootballersClub dl a:hover { text-decoration: underline; }
+		
+		
+.rectangle { padding-bottom: 25px; }
+#sidebar h2 { padding-bottom: 8px; color:#001042; }
+	#sidebar h2.bundesliga { color: #001042; }
